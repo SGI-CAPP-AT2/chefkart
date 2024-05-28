@@ -3,8 +3,9 @@ import ScrollableChipsBox from "../components/ScrollableChipsBox";
 import chips_data from "../data/cats.json";
 import { useTitle } from "../context/title.context";
 import ScrollableStoriesBox from "../components/ScrollableStories";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import Recommendations from "../components/Recommendations";
 const Title = styled.div`
   font-size: 20px;
   margin-left: 25px;
@@ -12,6 +13,8 @@ const Title = styled.div`
 const SelectItems = () => {
   const setTitle = useTitle();
   const [data, setData] = useState(null);
+  const [heightOfAbove, setAboveHeight] = useState(0);
+  const aboveRef = useRef();
   setTitle("Select Dishes");
   useEffect(() => {
     const fetchData = async () => {
@@ -23,15 +26,21 @@ const SelectItems = () => {
     };
     fetchData();
   }, []);
-  console.log(data);
+  useEffect(() => {
+    if (aboveRef.current) setAboveHeight(aboveRef.current.offsetHeight);
+  }, [data]);
+  console.log(heightOfAbove);
   return (
     <div>
       {data && (
         <>
-          <DateTimeBanner />
-          <ScrollableChipsBox data={chips_data} />
-          <Title className="bold">Popular Dishes</Title>
-          <ScrollableStoriesBox data={data.popularDishes} />
+          <div ref={aboveRef}>
+            <DateTimeBanner />
+            <ScrollableChipsBox data={chips_data} />
+            <Title className="bold">Popular Dishes</Title>
+            <ScrollableStoriesBox data={data.popularDishes} />
+          </div>
+          <Recommendations aboveHeight={heightOfAbove} recos={data.dishes} />
         </>
       )}
     </div>
