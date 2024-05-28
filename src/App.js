@@ -8,8 +8,8 @@ function App() {
     <HashRouter>
       <CommonLayout>
         <Routes>
-          <Route path="/" element={<ProductPage />} />
-          <Route path="/page/item/" element={<SelectItems />} />
+          <Route path="/prod/:id" element={<ProductPage />} />
+          <Route path="/" element={<SelectItems />} />
         </Routes>
       </CommonLayout>
     </HashRouter>

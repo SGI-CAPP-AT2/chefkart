@@ -1,12 +1,13 @@
 import { useScreen } from "../context/screen.context";
 
 const ViewPort = ({ children }) => {
-  const { height, width } = useScreen();
+  const { height, viewportwidth, width } = useScreen();
+  console.log(height);
   return (
     <div
       style={{
         height: height + "px",
-        width: (width < 750 ? width : 750) + "px",
+        width: viewportwidth + "px",
         margin: "auto",
       }}
     >

@@ -9,11 +9,12 @@ const CommonLayout = ({ children }) => {
   const navigate = useNavigate();
   const [height, navHeight] = useState(0);
   const [title, setTitle] = useState(null);
+
   return (
     <div
       style={{
-        width: window.innerWidth + "px",
-        height: window.innerHeight + "px",
+        width: 100 + "%",
+        height: 100 + "%",
         display: "flex",
         flexDirection: "column",
       }}
