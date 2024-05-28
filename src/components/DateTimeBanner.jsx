@@ -32,6 +32,11 @@ const BlackBlock = styled.div`
   width: 100%;
   background-color: #1c1c1c;
 `;
+const Ellipses = `
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
 const DateTimeContainer = styled.div`
   display: flex;
   width: calc(100% - 120px);
@@ -46,22 +51,26 @@ const ImageIcon = styled.img`
   margin: auto;
 `;
 const DateContainer = styled.div`
-  margin-left: 10px;
+  margin-left: auto;
   display: flex;
+  ${Ellipses}
 `;
 const TimeContainer = styled.div`
-  margin-right: 10px;
+  margin-right: auto;
   display: flex;
+  ${Ellipses}
 `;
 const TextInContainer = styled.div`
   margin: auto;
   margin-left: 10px;
+  ${Ellipses}
 `;
 const VerticalDivider = styled.div`
   height: 30px;
   width: 2px;
   background-color: #d6d6d6ce;
-  margin: auto;
+  margin-right: 15px;
+  margin-left: 15px;
 `;
 const DateTimeBanner = () => {
   return (
