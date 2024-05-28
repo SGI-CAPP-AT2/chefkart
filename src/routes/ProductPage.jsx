@@ -6,6 +6,7 @@ import styled from "styled-components";
 import AccordianTable from "../components/AccordianTable";
 import { shapeData } from "../helpers/shapeData";
 import ScrollableGrid from "../components/ScrollableGrid";
+import LoadingScreen from "../components/LoadingScreen";
 const Body = styled.div`
   padding: 15px;
   width: calc(100% - 30px);
@@ -72,6 +73,7 @@ const ProductPage = () => {
           </Body>
         </div>
       )}
+      {!data && <LoadingScreen />}
     </>
   );
 };

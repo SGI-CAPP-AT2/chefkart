@@ -18,17 +18,6 @@ const Right = styled.div`
   margin-left: auto;
 `;
 const RecommendationCard = ({ data }) => {
-  /**
-   * Shape of Data is
-   * {
-   *  name
-   *  rating
-   *  description
-   *  equipments
-   *  image
-   *  id
-   * }
-   */
   const { name, rating, id, equipments, description, image } = data;
   return (
     <Parent>
