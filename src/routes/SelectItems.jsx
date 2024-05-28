@@ -1,4 +1,13 @@
+import DateTimeBanner from "../components/DateTimeBanner";
+import { useTitle } from "../context/title.context";
+
 const SelectItems = () => {
-  return <div>Select Items page</div>;
+  const setTitle = useTitle();
+  setTitle("Select Dishes");
+  return (
+    <div>
+      <DateTimeBanner />
+    </div>
+  );
 };
 export default SelectItems;
