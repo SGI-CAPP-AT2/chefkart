@@ -4,7 +4,11 @@ import chips_data from "../data/cats.json";
 import { useTitle } from "../context/title.context";
 import ScrollableStoriesBox from "../components/ScrollableStories";
 import { useEffect, useState } from "react";
-
+import styled from "styled-components";
+const Title = styled.div`
+  font-size: 25px;
+  margin-left: 25px;
+`;
 const SelectItems = () => {
   const setTitle = useTitle();
   const [data, setData] = useState(null);
@@ -26,6 +30,7 @@ const SelectItems = () => {
         <>
           <DateTimeBanner />
           <ScrollableChipsBox data={chips_data} />
+          <Title className="bold">Popular Dishes</Title>
           <ScrollableStoriesBox data={data.popularDishes} />
         </>
       )}
