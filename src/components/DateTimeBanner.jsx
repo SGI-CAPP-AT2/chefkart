@@ -34,7 +34,7 @@ const BlackBlock = styled.div`
 `;
 const DateTimeContainer = styled.div`
   display: flex;
-  width: calc(100% - 140px);
+  width: calc(100% - 120px);
   margin: auto;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 4px #d6d6d69e;

@@ -1,1 +1,6 @@
-["Indian", "Italian", "Italian", "Italian"]
+[
+  { "el": "Indian", "active": true },
+  { "el": "Italian", "active": false },
+  { "el": "Italian", "active": false },
+  { "el": "Italian", "active": false }
+]

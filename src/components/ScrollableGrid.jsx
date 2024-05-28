@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 const Card = styled.div`
+  height: 95px;
   width: 92px;
   margin: 5px;
   padding: 14px;
