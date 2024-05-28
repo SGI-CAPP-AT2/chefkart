@@ -6,7 +6,7 @@ import ScrollableStoriesBox from "../components/ScrollableStories";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 const Title = styled.div`
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 25px;
 `;
 const SelectItems = () => {

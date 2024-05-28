@@ -4,7 +4,7 @@ import time from "../assets/time.svg";
 const SuperParent = styled.div`
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 130px;
 `;
 const Front = styled.div`
   width: 100%;
@@ -41,6 +41,7 @@ const DateTimeContainer = styled.div`
   display: flex;
   width: calc(100% - 120px);
   margin: auto;
+  margin-bottom: 10px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 4px #d6d6d69e;
   border-radius: 9px;

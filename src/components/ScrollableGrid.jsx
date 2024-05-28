@@ -10,7 +10,6 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 const Card = styled.div`
-  height: 95px;
   width: 92px;
   margin: 5px;
   padding: 14px;
@@ -19,7 +18,6 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const Image = styled.img``;
 
 const ScrollableGrid = ({ data }) => {
   return (
@@ -28,7 +26,11 @@ const ScrollableGrid = ({ data }) => {
         {data.map((el) => (
           <div>
             <Card>
-              <Image src={fridge} alt="fridge" />
+              <img
+                style={{ maxWidth: "70px", margin: "auto" }}
+                src={fridge}
+                alt="fridge"
+              />
               <span style={{ margin: "auto" }}>{el.name}</span>
             </Card>
           </div>
