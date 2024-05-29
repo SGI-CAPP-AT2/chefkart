@@ -37,7 +37,9 @@ const CartToast = () => {
     <Parent style={{ width }}>
       <Child style={{ width: viewportwidth - 100 }}>
         <Icon />
-        <Text>3 food items selected</Text>
+        <Text style={{ fontSize: width < 750 ? "small" : null }}>
+          3 food items selected
+        </Text>
         <Text
           style={{
             marginLeft: "auto",
