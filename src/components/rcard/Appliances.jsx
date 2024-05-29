@@ -10,9 +10,6 @@ const ApplianceContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 50px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 `;
 const ImageOfAppliance = styled.img`
   margin: auto;
@@ -21,6 +18,10 @@ const ImageOfAppliance = styled.img`
 const TextOfAppliance = styled.div`
   margin: auto;
   font-size: 10px;
+  max-width: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 const Appliances = ({ appliances }) => {
   console.log(appliances);

@@ -8,9 +8,9 @@ const Parent = styled.div`
 `;
 const Divider = styled.div`
   height: 30px;
-  width: 2px;
+  width: 1px;
   background-color: #f2f2f2;
-  margin: 10px;
+  margin: 5px;
 `;
 const MiddleFlexBox = ({ id, appliances }) => {
   return (

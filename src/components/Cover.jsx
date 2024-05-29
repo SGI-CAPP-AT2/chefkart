@@ -42,6 +42,10 @@ const Subtitle = styled.div`
   font-size: 20px;
   margin: 15px;
   padding-right: 150px;
+  max-height: 100px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 `;
@@ -84,7 +88,7 @@ const Cover = ({ title, subtitle, time }) => {
               style={{
                 ...style_for_bg_images,
                 bottom: 0,
-                right: -300,
+                right: -300 + "px",
               }}
               alt="for background"
             />
