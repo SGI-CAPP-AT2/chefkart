@@ -25,6 +25,9 @@ const Content = styled.div`
   border-top: 5px solid #f2f2f2;
   padding: 30px;
 `;
+const Margin = styled.div`
+  height: 75px;
+`;
 const Recommendations = ({ aboveHeight, recos }) => {
   const { height } = useScreen();
   return (
@@ -45,6 +48,7 @@ const Recommendations = ({ aboveHeight, recos }) => {
         {recos.map((dt) => (
           <RecommendationCard data={dt} />
         ))}
+        <Margin />
       </Content>
     </Body>
   );
