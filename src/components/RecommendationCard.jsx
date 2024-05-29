@@ -14,7 +14,7 @@ const Left = styled.div`
   max-width: 60%;
 `;
 const Right = styled.div`
-  margin-right: 0px;
+  margin-right: 15px;
   margin-left: auto;
 `;
 const RecommendationCard = ({ data }) => {

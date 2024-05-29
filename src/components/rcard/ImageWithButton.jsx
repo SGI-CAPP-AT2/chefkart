@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import AddButton from "./AddButton";
+import { useScreen } from "../../context/screen.context";
 
 const Parent = styled.div`
   position: relative;
-  width: 150px;
   height: 100px;
 `;
 const BaseForBoth = styled.div`
@@ -29,8 +29,9 @@ const Image = styled.div`
   overflow: hidden;
 `;
 const ImageWithButton = ({ image }) => {
+  const { viewportwidth } = useScreen();
   return (
-    <Parent>
+    <Parent style={{ width: viewportwidth > 750 ? 150 : 120 }}>
       <Front>
         <AddButton />
       </Front>

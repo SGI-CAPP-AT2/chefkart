@@ -8,5 +8,6 @@ const Button = styled.button`
   padding: 6px;
   padding-left: 20px;
   padding-right: 20px;
+  border: 0;
 `;
 export default Button;
