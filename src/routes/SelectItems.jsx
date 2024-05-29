@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Recommendations from "../components/Recommendations";
 import LoadingScreen from "../components/LoadingScreen";
+import CartToast from "../components/CartToast";
 const Title = styled.div`
   font-size: 20px;
   margin-left: 25px;
@@ -42,6 +43,7 @@ const SelectItems = () => {
             <ScrollableStoriesBox data={data.popularDishes} />
           </div>
           <Recommendations aboveHeight={heightOfAbove} recos={data.dishes} />
+          <CartToast />
         </>
       )}
       {!data && <LoadingScreen />}
