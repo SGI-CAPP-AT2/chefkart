@@ -3,30 +3,31 @@ import { useScreen } from "../context/screen.context";
 import b1_b from "../assets/b1_b.png";
 import b2_b from "../assets/bg2_b.png";
 import time from "../assets/time.svg";
+const top0left0 = `
+  top: 0;
+  left: 0;
+`;
 const Container = styled.div`
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
   position: relative;
   border-bottom: 5px solid #f2f2f2;
 `;
 const Front = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
+  ${top0left0}
   z-index: 1;
 `;
 const Back = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
+  ${top0left0}
   z-index: 0;
   width: 100%;
   height: 100%;
 `;
 const BackgroundContainer = styled.div`
   position: relative;
-  top: 0;
-  left: 0;
+  ${top0left0}
   width: 100%;
   height: 100%;
   overflow: hidden;
