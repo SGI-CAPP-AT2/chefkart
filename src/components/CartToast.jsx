@@ -7,6 +7,7 @@ const Parent = styled.div`
   bottom: 0;
   left: 0;
   height: 70px;
+  z-index: 10000;
 `;
 const Child = styled.div`
   background: #1c1c1c 0% 0% no-repeat padding-box;
@@ -15,7 +16,6 @@ const Child = styled.div`
   display: flex;
   height: 65px;
   margin-bottom: 5px;
-  z-index: 10000;
   border-radius: 10px;
 `;
 const Icon = styled.div`
@@ -35,11 +35,15 @@ const CartToast = () => {
   const { width, viewportwidth } = useScreen();
   return (
     <Parent style={{ width }}>
-      <Child style={{ width: viewportwidth - 350 }}>
+      <Child style={{ width: viewportwidth - 100 }}>
         <Icon />
         <Text>3 food items selected</Text>
         <Text
-          style={{ marginLeft: "auto", marginRight: "30px", fontSize: "20px" }}
+          style={{
+            marginLeft: "auto",
+            marginRight: "30px",
+            fontSize: "20px",
+          }}
         >
           →
         </Text>

@@ -8,7 +8,7 @@ const Parent = styled.div`
 const TitleText = styled.div`
   font-size: 20px;
   margin-top: auto;
-  max-width: 40%;
+  max-width: 70%;
   margin-bottom: auto;
   white-space: nowrap;
   overflow: hidden;
