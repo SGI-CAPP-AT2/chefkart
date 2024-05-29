@@ -9,7 +9,7 @@ const Parent = styled.div`
 const ApplianceContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60px;
+  width: 50px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

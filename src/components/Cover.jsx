@@ -9,7 +9,7 @@ const top0left0 = `
 `;
 const Container = styled.div`
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   position: relative;
   border-bottom: 5px solid #f2f2f2;
 `;
@@ -41,7 +41,9 @@ const Subtitle = styled.div`
   color: #a3a3a3;
   font-size: 20px;
   margin: 15px;
-  padding-right: 50%;
+  padding-right: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 const Time = styled.div`
   background-image: url(${time});

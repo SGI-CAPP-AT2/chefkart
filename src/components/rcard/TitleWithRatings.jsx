@@ -8,7 +8,11 @@ const Parent = styled.div`
 const TitleText = styled.div`
   font-size: 20px;
   margin-top: auto;
+  max-width: 40%;
   margin-bottom: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 const PureVeg = styled.div`
   background-image: url(${vegsvg});

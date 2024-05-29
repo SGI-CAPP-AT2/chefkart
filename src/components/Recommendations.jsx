@@ -35,6 +35,7 @@ const Recommendations = ({ aboveHeight, recos }) => {
           <Button
             style={{
               marginLeft: "auto",
+              marginRight: 15,
             }}
             className="bold"
           >

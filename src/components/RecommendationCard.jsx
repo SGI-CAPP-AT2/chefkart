@@ -11,7 +11,7 @@ const Parent = styled.div`
 `;
 const Left = styled.div`
   margin-left: 0px;
-  max-width: 70%;
+  max-width: 60%;
 `;
 const Right = styled.div`
   margin-right: 0px;
